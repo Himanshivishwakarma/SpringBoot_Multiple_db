@@ -12,7 +12,7 @@ import com.example.Mysql.repo.UserRepo;
 public class userController {
     @Autowired
     private UserRepo userRepo;
-    @PostMapping("/saveUser")
+    @PostMapping("/saveUser")   // this is save User
     public User addUser(@RequestBody User user){
         System.out.println("Call addUser method in the userController.");
      return this.userRepo.save(user);
