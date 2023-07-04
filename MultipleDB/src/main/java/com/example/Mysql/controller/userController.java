@@ -14,6 +14,7 @@ public class userController {
     private UserRepo userRepo;
     @PostMapping("/saveUser")
     public User addUser(@RequestBody User user){
+        System.out.println("Call addUser method in the userController.");
      return this.userRepo.save(user);
     }
 }
