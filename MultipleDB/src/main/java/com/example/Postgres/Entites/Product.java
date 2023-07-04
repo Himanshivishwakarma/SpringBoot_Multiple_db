@@ -28,7 +28,7 @@ public class Product {
 	
 	private boolean live;
 	
-	private double price;
+	private double price; 
 
 
 }
